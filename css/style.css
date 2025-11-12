@@ -528,3 +528,101 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* ============================= */
+/* ======= LOGIN PAGE ========= */
+/* ============================= */
+
+.login-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  background-color: #000; /* fundo igual ao do site */
+  padding-top: 120px; /* para não colar na navbar fixa */
+}
+
+.login-container {
+  background: #111; /* fundo do card */
+  padding: 40px 30px;
+  border-radius: 16px;
+  box-shadow: 0 0 15px rgba(7, 205, 255, 0.4);
+  width: 100%;
+  max-width: 380px;
+  text-align: center;
+  color: var(--light-color);
+  border: 1px solid rgba(7, 205, 255, 0.2);
+}
+
+.login-container h2 {
+  color: var(--primary-color);
+  margin-bottom: 25px;
+  font-size: 1.8rem;
+  letter-spacing: 1px;
+}
+
+/* Campos de entrada */
+.input-group {
+  display: flex;
+  align-items: center;
+  background: #1a1a1a;
+  border-radius: 8px;
+  padding: 10px 15px;
+  margin-bottom: 16px;
+  border: 1px solid rgba(7, 205, 255, 0.2);
+  transition: border 0.3s ease;
+}
+
+.input-group:focus-within {
+  border: 1px solid var(--accent-color);
+}
+
+.input-group i {
+  color: var(--accent-color);
+  margin-right: 10px;
+}
+
+.input-group input {
+  background: transparent;
+  border: none;
+  outline: none;
+  width: 100%;
+  color: var(--light-color);
+  font-size: 1rem;
+}
+
+/* Botão de login */
+.btn-login {
+  width: 100%;
+  background: var(--accent-color);
+  color: #000;
+  border: none;
+  padding: 12px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+  background: #0ae0ff;
+  transform: translateY(-2px);
+}
+
+/* Texto de cadastro */
+.signup-text {
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.signup-text a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.signup-text a:hover {
+  text-decoration: underline;
+}
